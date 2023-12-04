@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:contentDescription="background"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription,HardcodedText,KeyboardInaccessibleWidget" />
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="Main Scroll"
+    tools:ignore="HardcodedText">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="411dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/black_betty_container"
+                    android:layout_width="142dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="30dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
+                    android:onClick="Load_black_betty"/>
+
+                <FrameLayout
+                    android:id="@+id/supergirl_wings_container"
+                    android:layout_width="142dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="30dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
+                    android:onClick="Load_supergirl_wings"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="411dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/catwoman_container"
+                    android:layout_width="142dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="30dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
+                    android:onClick="Load_catwoman"/>
+
+                <FrameLayout
+                    android:id="@+id/batgirl_adventures_container"
+                    android:layout_width="142dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="30dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
+                    android:onClick="Load_batgirl"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="411dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/supergirl_futures_end_container"
+                    android:layout_width="142dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="30dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
+                    android:onClick="Load_supergirl_futures_end"/>
+
+                <FrameLayout
+                    android:id="@+id/grimm_fair_container"
+                    android:layout_width="142dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="30dp"
+                    android:background="@android:color/transparent"
+                    tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
+                    android:onClick="Load_grimm_fairy"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+</ScrollView>
+    <FrameLayout
+        android:id="@+id/toolBar"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#000000"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

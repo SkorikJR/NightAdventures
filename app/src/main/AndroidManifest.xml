@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.adjust.preinstall.READ_PERMISSION"/>
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider"/>
+    </queries>
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Light.NoActionBar"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="true"/>
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="996135224974569"/>
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="72f53e091070397c579fea30be13eed8"/>
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider996135224974569"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <activity
+            android:name=".BannerLoad"
+            android:configChanges="orientation|screenSize"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter
+                android:exported="true">
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".noConnection"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivatePolicy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view_drawer_layout"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".favActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".searchActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".favActivity_empty"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_12"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_11"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_10"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_9"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_8"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_7"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_6"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_5"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_4"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grimm_fairy_preload"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_futures_end_preload"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".batgirl_preload"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".catwoman_preload"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supergirl_wings_preloader"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".blackbetty_preload"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".homeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+</manifest>
